@@ -1,0 +1,11 @@
+{% extends 'urlApp/base.html' %}
+
+
+{% block content %}
+<center>
+    <h1 class="text-danger">Error: Page Not Found :(</h1>
+    <a href="/"><button class="btn btn-info">Home</button></a>
+    <a href="{% url "create" %}"><button class="btn btn-light">Create New URL</button></a>
+</center>
+
+{% endblock content %}

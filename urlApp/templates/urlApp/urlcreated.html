@@ -1,0 +1,11 @@
+{% extends 'urlApp/base.html' %}
+
+{% block content %}
+<center>
+    <div class="alert alert-success" role="alert">
+        <h1>Your Short URL:</h1>
+        <code style="font-size: 1.5rem;">{{ request.scheme }}://{{ request.get_host }}/{{ chars }}</code>
+    </div>
+</center>
+
+{% endblock content %}

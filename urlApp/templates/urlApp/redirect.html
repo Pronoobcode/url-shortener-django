@@ -1,0 +1,10 @@
+{% extends 'urlApp/base.html' %}
+
+
+{% block content %}
+<center>
+    <h2>URL: <span class="text-info">"{{ obj.original_url }}"</span></h2>
+    <h6>Your Request: <span class="text-secondary">"{{ obj.short_url }}"</span></h6>
+    <a href="{{ obj.original_url }}"><button class="btn btn-primary">Go To Website</button></a>
+</center>
+{% endblock content %}
