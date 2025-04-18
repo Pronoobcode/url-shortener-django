@@ -5,7 +5,7 @@ from django.utils import timezone
 
 
 class ShortURL(models.Model):
-    original_url = models.URLField(max_length=700)
+    original_url = models.URLField(max_length=10000)
     short_url = models.CharField(max_length=100)
     time_date_created = models.DateTimeField(default=timezone.now)
 
